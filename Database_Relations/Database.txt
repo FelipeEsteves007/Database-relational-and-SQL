@@ -1,0 +1,17 @@
+Relational Database
+A relational database is a collection of tables.
+
+A table is:
+like a spreadsheet where data is organized into rows and columns
+used to represent an entity or a relationship between entities.
+
+What is an entity?
+An entity is an object or concept that can be described by many attributes.
+
+RDBMS
+is a software that interacts with the underlying hardware and OS to physically store and manage data in relational databases (Firebird, MySQL, PostgreSQL, SQLite).
+
+Three SQL clauses:
+SELECT: The SELECT clause specifies the columns you want to retrieve from a table.
+FROM: The FROM clause specifies the source you want to retrieve data from.
+WHERE: The WHERE clause allows you to specify conditions to filter the data retrieved by the SELECT clause.
