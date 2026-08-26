@@ -31,3 +31,36 @@ GROUP BY clause:
 - Remember to include the column following the GROUP BY clause in the SELECT statement
 - Remember to exclude from the SELECT clause any columns that are neither in the GROUP BY clause or the aggregate functions
 
+Create a table 
+- CREATE TABLE: command hamndles table creation
+- Syntax:
+  CREATE TABLE table_name (
+    column_Name1 datatype [optional_parameters]
+    column_Name2 datatype [optional_parameters]
+    PRIMARY KEY (column_NameX)
+  )
+
+Alter or drop a table
+ALTER TABLE command helps you update table structure
+- Syntax:
+  ALTER TABLE product
+  ADD serial_number TEXT
+- Syntax:
+    DROP TABLE product
+
+Add data to a table
+INSERT INTO command helps you add data into table
+- Syntax:
+  INSERT INTO table_name(column1,column2)
+  VALUES (value1,value2)
+
+Delete or update data in a table
+DELETE command deletes a table
+- Syntax: DELETE FROM table_name
+          WHERE product_id = 2
+UPDATE .. SET command updates data in a table
+- Syntax: UPDATE table_name
+          SET column1 = newValue1
+              column2 = newValue2
+          WHERE condition
+                  
