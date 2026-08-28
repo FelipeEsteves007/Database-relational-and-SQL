@@ -75,3 +75,38 @@ Foreing key constraint
       REFERENCES parent_table_name (parent_table_primary_key)
   )      
         
+Joins:
+  JOIN ON clause helps join data from two tables
+  Syntax:
+   SELECT column1, column2
+   FROM table1
+   ON table2.column table2.column
+ Types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER
+
+ 1. INNER JOIN (Just intersection)
+┌─────────┬─────────┐
+│ Tabela A│ Tabela B│
+│         │         │
+│         █         │ -
+└─────────┴─────────┘
+
+2. LEFT JOIN (A + intersection)
+┌─────────┬─────────┐
+│ Tabela A│ Tabela B│
+│         │         │
+│ █ █ █ █ │         │ 
+└─────────┴─────────┘
+
+3. RIGHT JOIN (B + intersection)
+┌─────────┬─────────┐
+│ Tabela A│ Tabela B│
+│         │         │
+│         │ █ █ █ █ │ 
+└─────────┴─────────┘
+
+4. FULL OUTER JOIN (All)
+┌─────────┬─────────┐
+│ Tabela A│ Tabela B│
+│         │         │
+│ █ █ █ █ █ █ █ █ █ │ 
+└─────────┴─────────┘
