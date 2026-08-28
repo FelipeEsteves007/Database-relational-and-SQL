@@ -63,4 +63,15 @@ UPDATE .. SET command updates data in a table
           SET column1 = newValue1
               column2 = newValue2
           WHERE condition
-                  
+
+Relationship between tables
+Foreing key constraint 
+- Syntax: 
+  CREATE TABLE child_table_name (
+  column1 datatype1 [NOT NULL],
+
+  CONSTRAINT fk_parent_child           ----> Name
+    FOREIGN KEY (foreing_key_column)   ----> Create
+      REFERENCES parent_table_name (parent_table_primary_key)
+  )      
+        
